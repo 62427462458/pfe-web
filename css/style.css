@@ -1103,3 +1103,73 @@ section { position: relative; z-index: 1; padding: 10rem 5% 7rem; }
   .footer-links { gap: 1.2rem; }
   .footer-links a { font-size: 1.2rem; }
 }
+
+
+/* ===== PPT BUTTON & CARD ===== */
+.nav-ppt {
+  background: rgba(234,88,12,.1);
+  border: 1px solid rgba(234,88,12,.3);
+  color: #fb923c !important;
+  margin-left: .4rem;
+}
+
+.nav-ppt:hover {
+  background: rgba(234,88,12,.2) !important;
+  color: #fb923c !important;
+}
+
+.ppt-card {
+  border-color: rgba(234,88,12,.25) !important;
+  margin-top: 1.6rem;
+}
+
+.ppt-icon {
+  color: #fb923c !important;
+}
+
+.ppt-btn {
+  background: linear-gradient(135deg, #c2410c, #fb923c) !important;
+  box-shadow: 0 0 3rem rgba(251,146,60,.2) !important;
+}
+
+.ppt-btn:hover {
+  box-shadow: 0 0 5rem rgba(251,146,60,.4) !important;
+}
+
+/* pdf-download spacing */
+.pdf-download {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+@media (max-width: 640px) {
+  .ppt-card { margin-top: 1.2rem; }
+}
+
+
+/* ===== BTN PPT (orange) — student card ===== */
+.btn-ppt {
+  display: inline-flex;
+  align-items: center;
+  gap: .9rem;
+  padding: 1.3rem 2.8rem;
+  background: linear-gradient(135deg, #c2410c, #fb923c);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: .8rem;
+  text-decoration: none;
+  transition: transform .25s, box-shadow .25s;
+  box-shadow: 0 0 2.5rem rgba(251,146,60,.25);
+}
+
+.btn-ppt:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 5rem rgba(251,146,60,.5);
+}
+
+.btn-ppt.sm {
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+}
